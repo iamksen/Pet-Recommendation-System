@@ -2,17 +2,17 @@
     ?state <- (state start)
     =>
     (printout t crlf)
-	(unwatch all) ;for debuggin purpose
+    (unwatch all) ;for debugging purpose
     (printout t "#################################################################################" crlf)
     (printout t "#                                                                               #" crlf)
-	(printout t "#                             PET RECOMMENDATION SYSTEM                         #" crlf)
-	(printout t "#                                                                               #" crlf)
+    (printout t "#                             PET RECOMMENDATION SYSTEM                         #" crlf)
+    (printout t "#                                                                               #" crlf)
     (printout t "#################################################################################" crlf)
     (printout t crlf)
-		(printout t "Please enter your name :: ")
+    (printout t "Please enter your name :: ")
     (bind ?response (read))
     (printout t "Hello " ?response ". Please answer the following questions to find your buddy!" crlf)
-	(retract ?state)
+    (retract ?state)
     (assert (state question)))
 
 (deffacts start
