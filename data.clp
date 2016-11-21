@@ -1,12 +1,12 @@
 (deftemplate pet
-    (slot name   (type STRING))
-    (slot budget (type SYMBOL) (allowed-symbols s m l dn) (default m))
-    (slot space  (type SYMBOL) (allowed-symbols s m l dn) (default m))
-    (slot time   (type SYMBOL) (allowed-symbols s m l dn) (default m))
-    (slot family (type SYMBOL) (allowed-symbols m b r a q i dn) (default m))
+    (slot name     (type STRING))
+    (slot budget   (type SYMBOL) (allowed-symbols s m l dn) (default m))
+    (slot space    (type SYMBOL) (allowed-symbols s m l dn) (default m))
+    (slot time     (type SYMBOL) (allowed-symbols s m l dn) (default m))
+    (slot family   (type SYMBOL) (allowed-symbols m b r a q i dn) (default m))
     (slot lifespan (type SYMBOL) (allowed-symbols es s m l el dn) (default m))
-    (slot clade  (type SYMBOL) (default dn))
-    (slot color  (type SYMBOL) (allowed-symbols b w s r y g br o nil dn) (default dn))
+    (slot clade    (type SYMBOL) (default dn))
+    (slot color    (type SYMBOL) (allowed-symbols b w s r y g br o nil dn) (default dn))
 )
    
 (deftemplate preference
@@ -21,11 +21,11 @@
     (pet (name "tadpole")               (budget s) (space s) (time l) (family a) (clade g)  (lifespan m) (color b)) 
     (pet (name "male spiny lobster")    (budget s) (space s) (time s) (family a) (clade p)  (lifespan m) (color r)) 
     (pet (name "female spiny lobster")  (budget s) (space s) (time s) (family a) (clade p)  (lifespan l) (color r))
-	(pet (name "faraday tortoise")  	(budget s) (space s) (time s) (family a) (clade p)  (lifespan el) (color y))
+    (pet (name "faraday tortoise")  	(budget s) (space s) (time s) (family a) (clade p)  (lifespan el) (color y))
     (pet (name "oldale tortoise")       (budget s) (space s) (time s) (family a) (clade l)  (lifespan el) (color o))
     (pet (name "coastal tortoise")      (budget s) (space s) (time s) (family a) (clade l)  (lifespan el) (color g))
 		
-	(pet (name "turtle")  				(budget s) (space s) (time s) (family q) (clade p)  (lifespan l) (color br))		
+    (pet (name "turtle")  		(budget s) (space s) (time s) (family q) (clade p)  (lifespan l) (color br))		
     (pet (name "tadpole")               (budget s) (space s) (time l) (family q) (clade g)  (lifespan m) (color w)) 
     (pet (name "goldfish")              (budget s) (space s) (time s) (family q) (clade g)  (lifespan m) (color o)) 
     (pet (name "clownfish")             (budget s) (space s) (time s) (family q) (clade g)  (lifespan s) (color r)) 
@@ -86,7 +86,7 @@
     (pet (name "little penguin")        (budget l) (space m) (time m) (family b) (clade fl) (lifespan s) (color w))
       
 
-    (pet (name "common rat")          (budget s) (space s) (time s) (family m) (clade r)  (lifespan s) (color br))
+    (pet (name "common rat")            (budget s) (space s) (time s) (family m) (clade r)  (lifespan s) (color br))
     (pet (name "common mouse")          (budget s) (space s) (time s) (family m) (clade r)  (lifespan s) (color w))
     (pet (name "bush rat")              (budget s) (space s) (time m) (family m) (clade r)  (lifespan s) (color br))
     (pet (name "brown rat")             (budget s) (space s) (time m) (family m) (clade r)  (lifespan es)(color br))
@@ -166,7 +166,7 @@
     (pet (name "bear")                  (budget l) (space l) (time m) (family m) (clade ca) (lifespan m) (color w))
     (pet (name "cow")                   (budget l) (space l) (time m) (family m) (clade b)  (lifespan m) (color w))
     (pet (name "goat")                  (budget m) (space m) (time m) (family m) (clade b)  (lifespan m) (color w))
-	(pet (name "ram")                   (budget m) (space m) (time m) (family m) (clade b)  (lifespan l) (color w))
+    (pet (name "ram")                   (budget m) (space m) (time m) (family m) (clade b)  (lifespan l) (color w))
     (pet (name "sheep")                 (budget m) (space l) (time m) (family m) (clade b)  (lifespan m) (color w))
     (pet (name "buffalo")               (budget l) (space l) (time m) (family m) (clade b)  (lifespan m) (color br))
     (pet (name "labrador puppy")        (budget l) (space m) (time l) (family m) (clade c)  (lifespan m) (color br))
@@ -180,7 +180,7 @@
     (pet (name "elephant")              (budget l) (space l) (time l) (family m) (clade h)  (lifespan el) (color s))
     (pet (name "rhino")                 (budget l) (space l) (time l) (family m) (clade h)  (lifespan el) (color s))
     (pet (name "hippo")                 (budget l) (space l) (time l) (family m) (clade h)  (lifespan el) (color s))
-	(pet (name "elephant")              (budget l) (space l) (time l) (family m) (clade h)  (lifespan l) (color s))
+    (pet (name "elephant")              (budget l) (space l) (time l) (family m) (clade h)  (lifespan l) (color s))
     (pet (name "rhino")                 (budget l) (space l) (time l) (family m) (clade h)  (lifespan l) (color s))
     (pet (name "hippo")                 (budget l) (space l) (time l) (family m) (clade h)  (lifespan l) (color s))
 
@@ -201,7 +201,7 @@
     (pet (name "mantis")                (budget m) (space m) (time l) (family i) (clade sl) (lifespan es)(color g))
     (pet (name "scarabs")               (budget l) (space m) (time s) (family i) (clade sl) (lifespan es)(color b))
     (pet (name "scorpion")              (budget l) (space m) (time s) (family i) (clade sl) (lifespan m) (color b))
-	(pet (name "scorpion")              (budget m) (space m) (time s) (family i) (clade sl) (lifespan m) (color b))
+    (pet (name "scorpion")              (budget m) (space m) (time s) (family i) (clade sl) (lifespan m) (color b))
 
     (pet (name "cobra")                 (budget m) (space l) (time s) (family r) (clade s)  (lifespan s) (color b)) 
     (pet (name "python")                (budget m) (space l) (time s) (family r) (clade s)  (lifespan l) (color g)) 
@@ -209,8 +209,8 @@
     (pet (name "anaconda")              (budget l) (space l) (time s) (family r) (clade s)  (lifespan m) (color g)) 
     (pet (name "house lizard")          (budget s) (space s) (time s) (family r) (clade w)  (lifespan s) (color y))   
     (pet (name "komodo dragon")         (budget l) (space l) (time l) (family r) (clade w)  (lifespan l) (color y))
-	(pet (name "crocodile")         	(budget l) (space l) (time s) (family r) (clade w)  (lifespan l) (color g))
-	(pet (name "alligator")         	(budget l) (space l) (time s) (family r) (clade w)  (lifespan l) (color g))		
+    (pet (name "crocodile")         	(budget l) (space l) (time s) (family r) (clade w)  (lifespan l) (color g))
+    (pet (name "alligator")         	(budget l) (space l) (time s) (family r) (clade w)  (lifespan l) (color g))		
 
     (pet (name "rare species")          (budget l) (space l) (time l) )
 )
